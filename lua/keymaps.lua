@@ -18,3 +18,6 @@ vim.keymap.set("n", "<C-j>", "<C-w><C-j>", { desc = "Move focus to the lower spl
 
 -- Toggle Text Wrapping
 vim.keymap.set("n", "<leader>tw", ":set wrap!<CR>", { noremap = true, silent = true })
+
+-- Show hover over for LSP definitions
+vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, { noremap = true, silent = true, buffer = true })
